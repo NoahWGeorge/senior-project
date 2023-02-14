@@ -1,0 +1,25 @@
+body {
+    background-color: darkgray ;
+}
+
+p1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    
+  
+  }
+  button {
+    background-color: blue;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
