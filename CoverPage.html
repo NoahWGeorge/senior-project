@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Cover Page</title>
+	<title>Login Page</title>
 	<link rel="stylesheet" type="text/css" href="CoverPage.css">
-	<img src = "pictures/CoverPageBackground.jpeg>
+	<script src="CoverPage.JS"></script>
 </head>
 <body>
 	<div class="login-container">
-		<h1>Welcome to The Gallery </h1>
+		<h1>Login</h1>
 		<form>
 			<label for="username">Username</label>
 			<input type="text" id="username" name="username" required>
@@ -15,10 +15,11 @@
 			<label for="password">Password</label>
 			<input type="password" id="password" name="password" required>
 
-			<button type="submit" onclick="login()">Login</button>
+			<button type="button" onclick=login()>Login</button>
 		</form>
+		<a href="createaccount.html">Don't Have an Account? Make one!</a>
 	</div>
 
-	<script src="script.js"></script>
+	<script src="CoverPage.css"></script>
 </body>
 </html>

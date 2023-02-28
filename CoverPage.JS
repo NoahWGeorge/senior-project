@@ -1,10 +1,10 @@
 function login() {
-    const username = document.getElementById("username").value;
-    const password = document.getElementById("password").value;
-    
-    if (username === "yourusername" && password === "yourpassword") {
-      window.location.href = "index.html";
-    } else {
-      alert("Invalid username or password. Please try again.");
-    }
+  const username = document.getElementById("username").value;
+  const password = document.getElementById("password").value;
+  
+  if (username === "yourusername" && password === "yourpassword") {
+    window.location.href = "index.html";
+  } else {
+    alert("Invalid username or password. Please try again.");
   }
+}
