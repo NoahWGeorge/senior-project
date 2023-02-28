@@ -3,7 +3,7 @@ function login() {
     const password = document.getElementById("password").value;
     
     if (username === "yourusername" && password === "yourpassword") {
-      window.location.href = "gallery.html";
+      window.location.href = "index.html";
     } else {
       alert("Invalid username or password. Please try again.");
     }
