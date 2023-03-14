@@ -1,5 +1,5 @@
 body {
-	background-image: url('pictures/GifCover.gif');
+	background-image: url('/reactfolder/public/pictures/GifCover.gif');
 }
 
 .login-container {
