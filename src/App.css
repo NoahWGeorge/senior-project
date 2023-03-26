@@ -1,3 +1,45 @@
 .list-group{
     background: red;
 }
+
+h1 {
+    padding-top: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 50pt;
+
+}
+h2 {
+    padding: 10px;
+    padding-bottom: 20px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 50pt;
+
+}
+.homebtn{
+font-size: x-large;
+margin-right: 40px;
+    
+}
+.gallerybtn{
+margin-right: 40px;
+font-size: x-large;
+}
+.aboutbtn{
+font-size: x-large;
+}
+    
+.homebtn:hover, .homebtn:active{
+font-size: xx-large;
+}
+.gallerybtn:hover, .gallerybtn:active{
+    font-size: xx-large;
+}
+.aboutbtn:hover, .aboutbtn:active{
+    font-size: xx-large;
+}
+
+
