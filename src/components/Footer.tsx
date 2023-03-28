@@ -5,7 +5,7 @@ import {
   Stack,
   Text,
 } from "@chakra-ui/react";
-//import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+
 
 
 export const Footer = () => (
@@ -13,12 +13,12 @@ export const Footer = () => (
     <Stack spacing={{ base: "4", md: "5" }}>
       <Stack justify="space-between" direction="row" align="center">
       
-        <ButtonGroup variant="ghost">
+        <ButtonGroup variant="ghost" justifyContent={"center"}>
           <IconButton
             as="a"
             href="#"
             aria-label="LinkedIn"
-            //icon={<FaLinkedin fontSize="1.25rem" />}
+            
           />
           <IconButton
             as="a"

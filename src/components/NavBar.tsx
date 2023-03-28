@@ -9,10 +9,6 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
-  MenuItemOption,
-  MenuGroup,
-  MenuOptionGroup,
-  MenuDivider,
   Button,
 } from "@chakra-ui/react";
 import { HStack, Image } from "@chakra-ui/react";
@@ -33,7 +29,6 @@ const NavBar: React.FC<NavbarProps> = ({
   return (
 
     <HStack justifyContent={"space-between"}>
-     
       <Image src={sitelogo} boxSize="60px" />
       <ul>
         <Link to="/">
@@ -48,7 +43,7 @@ const NavBar: React.FC<NavbarProps> = ({
           <button className="aboutbtn">About</button>
         </Link>
       </ul>
-      
+     
       <div className="dropdown">
         <ul>
           <Menu>
@@ -56,7 +51,9 @@ const NavBar: React.FC<NavbarProps> = ({
             </MenuButton>
             <MenuList>
               <MenuItem>likes</MenuItem>
+              <Link to ="/SignUpForm">
               <MenuItem>sign in/up</MenuItem>
+              </Link>
               <MenuItem>settings</MenuItem>
 
             </MenuList>

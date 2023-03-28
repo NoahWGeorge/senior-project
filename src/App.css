@@ -36,12 +36,12 @@
     font-size: 50pt;
 }
 
-.navbarbtns{
-justify-content: space-between;
-}
+
 
 .homebtn{
 font-size: x-large;
+justify-content: space-between;
+
 }
 
 .gallerybtn{
