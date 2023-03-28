@@ -5,7 +5,8 @@ export default interface Picture{
     name: string;
     image_url: string;
     description: string;
-    featured_image_url: string;
+    collection_slug: 'cryptopunks'
+    
     
 
 }

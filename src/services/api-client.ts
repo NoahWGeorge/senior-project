@@ -4,13 +4,16 @@ import FetchAssetsResponse from "../models/FetchAssetsResponse";
 
 
 
-async function getData(limit: number = 20): Promise<FetchAssetsResponse|undefined>{
+async function getData(limit: number = 8): Promise<FetchAssetsResponse|undefined>{
 
     const options = {
         method: 'GET',
         url: 'https://opensea13.p.rapidapi.com/assets',
         params: {
-            limit: limit
+            limit: limit,
+            collection: 'cryptopunks',
+            
+            
         },
         headers: {
             'X-RapidAPI-Key': 'c467bf97b5msh8edd1ae591cf776p1ef304jsn5cb48f373061',

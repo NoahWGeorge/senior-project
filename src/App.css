@@ -1,8 +1,6 @@
-.list-group{
-    background: red;
-}
 
-h1 {
+
+.title {
     padding-top: 60px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
@@ -10,27 +8,60 @@ h1 {
     font-size: 50pt;
 
 }
-h2 {
+.subtitle {
     padding: 10px;
     padding-bottom: 20px ;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     color: whitesmoke;
-    font-size: 50pt;
+    font-size: 20pt;
 
 }
+.bodytext{
+    padding: 10px;
+    padding-bottom: 20px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 20pt;
+
+
+}
+.bodytitle{
+    padding: 10px;
+    padding-bottom: 5px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 50pt;
+}
+
+.navbarbtns{
+justify-content: space-between;
+}
+
 .homebtn{
 font-size: x-large;
-margin-right: 40px;
-    
 }
+
 .gallerybtn{
-margin-right: 40px;
 font-size: x-large;
 }
+
 .aboutbtn{
 font-size: x-large;
+
+
 }
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+    
+
+
     
 .homebtn:hover, .homebtn:active{
 font-size: xx-large;

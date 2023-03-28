@@ -20,7 +20,7 @@ const PicGrid = () => {
 
     }, [])
   return (
-    <SimpleGrid columns={4} spacing={10}>
+    <SimpleGrid columns={4} spacing={10} padding={10}>
         {Assets.map((asset) => ( <NftCard key={asset.name} assets={asset} />
         ))}
     </SimpleGrid>

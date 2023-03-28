@@ -1,32 +1,36 @@
 import { Grid, GridItem } from "@chakra-ui/layout";
 import NavBar from "./components/NavBar";
-import logo from './assets/OceanWave.gif'
+import WavePic from './assets/OceanWave.gif'
 import PicGrid from "./components/PicGrid";
 import './App.css'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
-
-
-
-
+import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
+import Footer from "./components/Footer";
+import Home from "./pages/Home";
+import about from "./pages/about";
+import gallery from "./pages/gallery";
 
 function App() {
   return ( 
 
     <Grid templateAreas={{
-      base: '"nav" "main"'
+      base: '"nav" "main" "footer"'
     }}
   >
       <GridItem area ='nav'> <NavBar onHomeClick={function (): void {
-        throw new Error("Function not implemented.");
+        //throw new Error("Function not implemented.");
       } } onGalleryClick={function (): void {
-        throw new Error("Function not implemented.");
+        //throw new Error("Function not implemented.");
       } } onAboutClick={function (): void {
-        throw new Error("Function not implemented.");
+        //throw new Error("Function not implemented.");
       } } /></GridItem>
-      <GridItem area ='main' backgroundImage={logo}> <h1 >Welcome to the Gallery</h1><h2>Here is a list of our featured items:</h2>
-        <PicGrid/>
-       
+      <Routes>
+        <Route path="/" Component={Home}> </Route>
+        <Route path="/about" Component={about}> </Route>
+        <Route path="/gallery" Component={gallery}> </Route>
+
+      </Routes>
+      
+      <GridItem pl='2' bg='dark grey' area={'footer'}>  <Footer/>
       </GridItem>
   </Grid>
 

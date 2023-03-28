@@ -1,9 +1,23 @@
-import '../App.css'
-import { HStack, Image} from "@chakra-ui/react"
-import logo from '../assets/siteIcon.png'
-import ColorModeSwitch from "./ColorModeSwitch"
-import React from "react"
-//import { IconButton } from '@chakra-ui/react'
+import React from "react";
+import "../App.css";
+import sitelogo from "../assets/siteIcon.png";
+import usrimage from "../assets/user.png";
+import shopimage from "../assets/shopping.png";
+import ColorModeSwitch from "./ColorModeSwitch";
+import {
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
+  MenuItemOption,
+  MenuGroup,
+  MenuOptionGroup,
+  MenuDivider,
+  Button,
+} from "@chakra-ui/react";
+import { HStack, Image } from "@chakra-ui/react";
+import { Link } from "react-router-dom";
+import { ChevronDownIcon } from "@chakra-ui/icons";
 
 interface NavbarProps {
   onHomeClick: () => void;
@@ -11,32 +25,52 @@ interface NavbarProps {
   onAboutClick: () => void;
 }
 
-
-
-
-const NavBar: React.FC<NavbarProps> = ({ onHomeClick, onGalleryClick, onAboutClick }) => {
+const NavBar: React.FC<NavbarProps> = ({
+  onHomeClick,
+  onGalleryClick,
+  onAboutClick,
+}) => {
   return (
-    <HStack justifyContent={'space-between'}  >
-        <Image src={logo} boxSize='60px' />
-        <ul >
-        
-          <button className= "homebtn" >Home</button>
-        
-        
-          <button className="gallerybtn" >Gallery</button>
-        
-        
-          <button className= "aboutbtn" >About</button>
-      
+
+    <HStack justifyContent={"space-between"}>
+     
+      <Image src={sitelogo} boxSize="60px" />
+      <ul>
+        <Link to="/">
+          <button className="homebtn">Home</button>
+        </Link>
+
+        <Link to="/gallery">
+          <button className="gallerybtn">Gallery</button>
+        </Link>
+
+        <Link to="/about">
+          <button className="aboutbtn">About</button>
+        </Link>
       </ul>
-        <ColorModeSwitch   />
-        
+      
+      <div className="dropdown">
+        <ul>
+          <Menu>
+            <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>Profile
+            </MenuButton>
+            <MenuList>
+              <MenuItem>likes</MenuItem>
+              <MenuItem>sign in/up</MenuItem>
+              <MenuItem>settings</MenuItem>
 
-        
-        
-    
+            </MenuList>
+          </Menu>
+
+          <button className="shopbtn">
+            <Image src={shopimage} boxSize="45px"></Image>{" "}
+          </button>
+        </ul>
+      </div>
+
+      <ColorModeSwitch />
     </HStack>
-  )
-}
+  );
+};
 
-export default NavBar
+export default NavBar;
