@@ -41,11 +41,13 @@
 .homebtn{
 font-size: x-large;
 justify-content: space-between;
-
+margin-right: 10px;
+margin-left: 100px;
 }
 
 .gallerybtn{
 font-size: x-large;
+margin-right: 10px;
 }
 
 .aboutbtn{

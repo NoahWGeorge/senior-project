@@ -30,7 +30,7 @@ const NavBar: React.FC<NavbarProps> = ({
 
     <HStack justifyContent={"space-between"}>
       <Image src={sitelogo} boxSize="60px" />
-      <ul>
+      <ul justify-content-between>
         <Link to="/">
           <button className="homebtn">Home</button>
         </Link>
@@ -44,7 +44,7 @@ const NavBar: React.FC<NavbarProps> = ({
         </Link>
       </ul>
      
-      <div className="dropdown">
+      <div style={{ display: "flex", justifyContent: "space-between" }}>
         <ul>
           <Menu>
             <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>Profile
@@ -63,9 +63,10 @@ const NavBar: React.FC<NavbarProps> = ({
             <Image src={shopimage} boxSize="45px"></Image>{" "}
           </button>
         </ul>
+
+        <ColorModeSwitch />
       </div>
 
-      <ColorModeSwitch />
     </HStack>
   );
 };
