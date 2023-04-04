@@ -8,6 +8,14 @@
     font-size: 50pt;
 
 }
+.abouttitle{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 50pt;
+    padding-top: 60px;
+
+}
 .subtitle {
     padding: 10px;
     padding-bottom: 20px ;
