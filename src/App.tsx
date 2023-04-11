@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 import about from "./pages/about";
 import gallery from "./pages/gallery";
 import SignUpForm from "./pages/SignUpForm";
+import { ShoppingCart } from "./pages/ShoppingCart";
 
 function App() {
   return ( 
@@ -29,6 +30,8 @@ function App() {
         <Route path="/about" Component={about}> </Route>
         <Route path="/gallery" Component={gallery}> </Route>
         <Route path="/SignUpForm" Component={SignUpForm}> </Route>
+        <Route path="/ShoppingCart" Component={ShoppingCart}> </Route>
+
        
 
       </Routes>

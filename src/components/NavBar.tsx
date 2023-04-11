@@ -59,9 +59,9 @@ const NavBar: React.FC<NavbarProps> = ({
             </MenuList>
           </Menu>
 
-          <button className="shopbtn">
+          <Link to ="/ShoppingCart" className="shopbtn">
             <Image src={shopimage} boxSize="45px"></Image>{" "}
-          </button>
+          </Link>
         </ul>
 
         <ColorModeSwitch />

@@ -36,8 +36,9 @@ export const Footer = () => (
         </ButtonGroup>
       </Stack>
     <Flex direction={'column'}>
-      <Text textAlign={'center'}>https://www.linkedin.com/in/noah-george-41b817227/ </Text>
-      <Text textAlign={'center'}>https://github.com/NoahWGeorge </Text>
+      <a href="https://www.linkedin.com/in/noah-george-41b817227/">
+      <Text textAlign={'center'}>https://www.linkedin.com/in/noah-george-41b817227/ </Text></a>
+      <a href="https://github.com/NoahWGeorge"><Text textAlign={'center'}>https://github.com/NoahWGeorge </Text></a>
       <Text fontSize="sm" color="subtle" textAlign={"center"}>
         &copy; {new Date().getFullYear()} The Gallery, Inc. All rights
         reserved.
