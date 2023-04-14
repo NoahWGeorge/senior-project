@@ -44,7 +44,7 @@ const NavBar: React.FC<NavbarProps> = ({
         </Link>
       </ul>
      
-      <div style={{ display: "flex", justifyContent: "space-between" }}>
+      <div className="SideButtons" style={{ display: "flex", justifyContent: "space-between" }}>
         <ul>
           <Menu>
             <MenuButton as={Button} rightIcon={<ChevronDownIcon />}>Profile
@@ -58,11 +58,12 @@ const NavBar: React.FC<NavbarProps> = ({
 
             </MenuList>
           </Menu>
+          </ul>
 
           <Link to ="/ShoppingCart" className="shopbtn">
             <Image src={shopimage} boxSize="45px"></Image>{" "}
           </Link>
-        </ul>
+        
 
         <ColorModeSwitch />
       </div>
