@@ -1,6 +1,6 @@
 import React from "react";
 import "../App.css";
-import sitelogo from "../assets/siteIcon.png";
+import sitelogo2 from "../assets/siteIcon2.png";
 import usrimage from "../assets/user.png";
 import shopimage from "../assets/shopping.png";
 import ColorModeSwitch from "./ColorModeSwitch";
@@ -29,7 +29,7 @@ const NavBar: React.FC<NavbarProps> = ({
   return (
 
     <HStack justifyContent={"space-between"}>
-      <Image src={sitelogo} boxSize="60px" />
+      <Image src={sitelogo2} boxSize="60px" />
       <ul justify-content-between>
         <Link to="/">
           <button className="homebtn">Home</button>
