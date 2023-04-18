@@ -9,13 +9,13 @@ assets: Picture
 
 const NftCard = ({assets}: Props ) => {
   return (
-    <a href = {assets.external_link}>
+    <a href = {assets.permalink}>
     <Card borderRadius={20} overflow='hidden' >
       <Image src={assets.image_url} />
       <CardBody>
         <Heading> {assets.name} </Heading>
         <CardFooter>
-          {assets.description}
+          
           
         </CardFooter>
         

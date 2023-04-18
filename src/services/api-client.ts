@@ -4,14 +4,14 @@ import FetchAssetsResponse from "../models/FetchAssetsResponse";
 
 
 
-async function getData(limit: number = 8): Promise<FetchAssetsResponse|undefined>{
+async function getData(limit: number = 8, search?: string): Promise<FetchAssetsResponse|undefined>{
 
     const options = {
         method: 'GET',
         url: 'https://opensea13.p.rapidapi.com/assets',
         params: {
             limit: limit,
-            collection: 'cryptopunks',
+            collection: search
             
             
         },
@@ -20,6 +20,10 @@ async function getData(limit: number = 8): Promise<FetchAssetsResponse|undefined
             'X-RapidAPI-Host': 'opensea13.p.rapidapi.com',
         },
     };
+
+    //if (search === '')
+       // delete options.params.collection_slug;
+
     try {
         const response = await axios.request(options)
         console.log(response.data)
