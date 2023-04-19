@@ -6,6 +6,7 @@ import {
   Text,
   Flex
 } from "@chakra-ui/react";
+import linkein from "../assets/LinkedIn.png";
 
 
 
@@ -13,6 +14,7 @@ export const Footer = () => (
   <Container as="footer" role="contentinfo" py={{ base: "12", md: "16" }}>
     <Stack spacing={{ base: "4", md: "5" }}>
       <Stack justify="space-between" direction="row" align="center">
+        
       
         <ButtonGroup variant="ghost" justifyContent={"center"}>
           <IconButton
@@ -35,7 +37,7 @@ export const Footer = () => (
           />
         </ButtonGroup>
       </Stack>
-    <Flex direction={'column'}>
+    <Flex direction={'column'} >
       <a href="https://www.linkedin.com/in/noah-george-41b817227/">
       <Text textAlign={'center'}>https://www.linkedin.com/in/noah-george-41b817227/ </Text></a>
       <a href="https://github.com/NoahWGeorge"><Text textAlign={'center'}>https://github.com/NoahWGeorge </Text></a>
