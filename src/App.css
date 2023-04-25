@@ -27,12 +27,29 @@
 }
 .bodytext{
     padding: 10px;
-    padding-bottom: 20px ;
+    padding-bottom: 100px ;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
     color: whitesmoke;
     font-size: 20pt;
 
+
+}
+.searchAssets{
+    padding: 10px;
+    padding-bottom: 10px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 20pt;
+}
+.NFTlist{
+    
+    padding-bottom: 10px ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 15pt;
 
 }
 .bodytitle{

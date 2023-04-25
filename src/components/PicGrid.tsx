@@ -16,11 +16,12 @@ const PicGrid = ({search}: PicGridProps) => {
 
     useEffect(() =>{
         async function getAssets(){
-            const data = await getData(8,search)
-            if (data != null)
+            const data = await getData(15,search)
+            if (data != null ){
+              data.assets = data.assets.filter(d => d.image_url != null)
                 setAssets(data.assets)
         } 
-        
+      }
        getAssets()
 
     }, [search])

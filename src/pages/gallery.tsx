@@ -18,6 +18,14 @@ const gallery = () => {
   return (
     <GridItem area ='main' backgroundImage={WavePic}  backgroundSize='cover'> 
     <h1 className="title"  >The Gallery is a great place to explore...</h1>
+    <h2 className="searchAssets">Here are some recommended searches: </h2>
+    <ul className='NFTlist'>
+      <li>world-of-men-collection-1</li>
+      <li>b-apetaverse-45</li>
+      <li>cryptopunks</li>
+      <li>beatenapes</li>
+      <li>multicybers</li>
+      </ul>
     <Stack spacing={2}>
       <InputGroup>
         <InputLeftElement
